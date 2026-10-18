@@ -1,0 +1,152 @@
+/* Reset dasar untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan Body dan Tipografi */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Warna latar belakang lembut ala Bootstrap */
+}
+
+/* Gaya untuk H1 Paling Atas */
+h1#atas {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #0d6efd; /* Biru Bootstrap */
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Navigasi (Menu) */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #212529; /* Gelap / Hitam */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Container untuk setiap section */
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Header di dalam section */
+section h2 {
+    color: #0d6efd;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gaya untuk paragraf dan teks */
+section p {
+    margin-bottom: 1rem;
+}
+
+section strong {
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+/* List Keahlian */
+#keahlian ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#keahlian ul li {
+    background-color: #e9ecef;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #0d6efd;
+}
+
+/* Tautan Kontak & Footer */
+#kontak a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+
+/* Footer buatan di bagian kontak */
+#kontak br + p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+#kontak p:last-child {
+    text-align: center;
+}
+
+#kontak p:last-child a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 4px;
+}
+
+#kontak p:last-child a:hover {
+    background-color: #5c636a;
+    text-decoration: none;
+}
+
+/* Responsif untuk perangkat Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+        border-bottom: 1px solid #343a40;
+    }
+    
+    nav a:last-child {
+        border-bottom: none;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
